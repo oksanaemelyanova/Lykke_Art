@@ -1,0 +1,106 @@
+.barbie-banner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* this gonna be arranged with style */
+
+.barbie-banner img {
+    width: 100%;
+    height: 100px;
+   object-fit: cover;
+    display: block;
+}
+
+.barbie-banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    text-shadow: 2px 2px 5px #000;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 30px;
+    color: maroon;
+    font-size: 33px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+}
+
+.doll-name {
+    background-color: pink;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    padding-left: 35px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.doll-name h3 {
+    margin: 0;
+    font-size: 33px;
+    font-family: 'Arial', sans-serif;
+    color: #4a0020;
+}
+
+.doll-img {
+    width: 389px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;    
+}
+
+.doll-slogan {
+    margin-top: 10px;
+    margin-left: 35px;
+    color: #c2185b;
+    font-size: 22px;
+    font-family: 'Cursive', sans-serif;
+    background: linear-gradient(to right, #ffd1dc, #ffe0f0);
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    animation: floatGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(255, 182, 193, 0.6);
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+#paragDoll {
+    margin-top: 8px;
+    margin-left: 35px;
+    margin-right: 50px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 19px;
+    color: #5e2a3b;
+    line-height: 1.6;
+    max-width: 600px;
+}
